@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서영욱의 CSS기초</title>
+
+    <style>
+
+        *{
+        /*전체 선택자*/
+            margin:0;
+            text-decoration:none;
+        }
+        /*태그선택자*/
+        p{
+            background:yellowgreen;
+            color:darkgreen;
+        }
+        /*클래스선택자*/
+        .class1{
+            background:yellowgreen;
+            color:darkgreen;
+        }
+
+        div.class2{
+            background: darkgreen;
+            color:yellowgreen;
+        }
+        /*자식선택자*/
+        /*클래스가 class3인 놈의 자식인 h1*/
+        .class3 > h1{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p class="class1">케이스1</p>
+    <p class="class2">케이스2</p>
+    <div class="class2">케이스3</div>
+    <div class="class3"><h1>케이스4</h1></div>
+</div>
+</body>
+</html>
